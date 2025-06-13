@@ -1,10 +1,12 @@
 # WeasyPrint-docker-images
-Some `Dockerfile`'s for [WeasyPrint](https://github.com/Kozea/WeasyPrint)
+Some `Dockerfile`'s for [WeasyPrint](https://github.com/Kozea/WeasyPrint).
+
+These Docker images here are meant to run weasyprint as a CLI tool. Not as a service.
 
 There are many possible ways to create an image:
 
-* What pre-built image should we start from? Alpine, Debian, Ubuntu, ...?
-* Use a pre-build Python image instead?
+* What pre-built image should we start with? Alpine, Debian, Ubuntu, ...?
+* Use a pre-built Python image instead?
 * Which Python version?
 * Use pre-packaged weasyprint or build from source? Use Wheels?
 * What fonts do we want installed?
