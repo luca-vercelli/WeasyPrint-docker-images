@@ -14,13 +14,21 @@ There are many possible ways to create an image:
 
 See [documentation](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html) for more.
 
-So far we provide one `Dockerfile` only, but more may be added later.
+We provide two different `Dockerfile` as examples.
 
-## Build image
+## Build image - prepackaged
+
+`cd` to desired `prepackaged*` folder. You should see a `Dockerfile` there.
+
+Build image with:
+
+    docker build -t weasyprint .
+
+## Build image - from source
 
 Download weasyprint [sources](https://github.com/Kozea/WeasyPrint/archive/refs/heads/main.zip)
 
-Copy `.dockerignore` and desired `Dockerfile` in weasyprint root folder
+Copy `.dockerignore` and desired `source*/Dockerfile` in weasyprint root folder
 
 Build image with:
 
