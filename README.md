@@ -35,6 +35,18 @@ Build image with:
     docker build -t weasyprint .
 
 
+## Build image - from source - FOR DEVELOPMENT
+
+Download weasyprint [sources](https://github.com/Kozea/WeasyPrint/archive/refs/heads/main.zip)
+
+Copy `.dockerignore` and desired `source-dev*/Dockerfile` in weasyprint root folder
+
+Build image with:
+
+    docker build -t weasyprint .
+
+This image is larger and slower, but it builds fast.
+
 ## Run container
 Run container with:
 
