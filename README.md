@@ -59,3 +59,11 @@ or
 These scripts are just shortcuts for command `docker run -v ".:/data" --rm -it weasyprint`.
 
 weasyprint can access only files in "." folder, via Docker volumes.
+
+**Warning**: container will be created, executed, destroyed each time.
+If you need to run `weasyprint` many times, consider a daemon container:
+
+     docker run -d --name my_weasyprint_container -v ".:/data" --entrypoint sleep weasyprint infinity   # create daemon container
+	 ...
+	 docker exec my_weasyprint_container weasyprint		# run weasyprint inside daemon container
+
