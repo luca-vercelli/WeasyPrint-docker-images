@@ -65,5 +65,5 @@ If you need to run `weasyprint` many times, consider a daemon container:
 
      docker run -d --name my_weasyprint_container -v ".:/data" --entrypoint sleep weasyprint infinity   # create daemon container
 	 ...
-	 docker exec my_weasyprint_container weasyprint		# run weasyprint inside daemon container
+	 docker exec my_weasyprint_container weasyprint	<args>	# run weasyprint inside daemon container
 
